@@ -1,0 +1,54 @@
+#menu-create,#menu-update {
+  background-color: white;
+  .menu-box-top {
+    border-bottom: 1px solid #eeeeee;
+    h4 {
+      margin-left: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+  .menu-box-bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+    input[name="name"] {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    input[name="order"] {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 20%;
+    }
+    select{
+      width: 100%;
+      border-color: #d2d6de;
+      margin-bottom: 20px;
+    }
+  }
+  .menu-confirm{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    .menu-confirm-ok{
+      background-color: #00c6ff;
+      border-color: #00c6ff;
+      border-radius: 0px;
+      color: white;
+      text-transform: uppercase;
+    }
+  }
+}
+#menu-update{
+  display: none;
+  .show-error{
+    display: none;
+    color: red;
+  }
+}
+.blink_me {
+  animation: blinker 1s linear 3;
+}
+@keyframes blinker {
+  50% { opacity: 0; }
+}
